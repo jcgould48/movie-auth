@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Welcome</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Add a new movie!</h1>
+
+
+        <form action="/movies/addmovie" method= "POST">
+        <label for="movie">Please Enter Movie Information</label><br/>
+        <input type="text" id="title" name= "title" placeholder="Movie title"/><br/>
+        <input type="text" id="rating" name= "rating" placeholder="Rating"/><br/>
+        <input type="text" id="synopsis" name= "synopsis" placeholder="Synopsis"/><br/>
+        <input type="text" id="releaseyear" name= "releaseyear" placeholder="Release Year"/><br/>
+        <input type="text" id="genre" name= "genre" placeholder="genre"/><br/>
+        <input type="text" id="director" name= "director" placeholder="Director"/><br/>
+        <input type="text" id="boxoffice" name= "boxoffice" placeholder="Box office"/><br/>
+        <input type="text" id="movieposter" name= "movieposter" placeholder="Movie Poster"/><br/>
+        
+        <button type="submit">Add To Movie Database</button>
+        </form>
+
+
+        <form action="/users/logout" method="GET">
+            <div>
+            <button type="submit">Logout</button>
+            </div>
+    </body>
+</html>

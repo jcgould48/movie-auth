@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>View Movies</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Movies</h1>
+        <% if (movies) {
+         for(let m in movies){ %>
+            <h2> <%= `${movies[m].title[0].toUpperCase()}${movies[m].title.slice(1)}` 
+            %>
+        </h2>
+        <p><%=movies[m].rating %></p>
+        <p><%=movies[m].synopsis %></p>
+        <p><%=movies[m].releaseyear %></p>
+        <p><%=movies[m].genre %></p>
+        <p><%=movies[m].director %></p>
+        <p><%=movies[m].boxoffice %></p>
+        <img src="<%=movies[m].boxoffice %>"></img>
+        <hr/>
+        <% }} %>
+    </body>
+</html>
